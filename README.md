@@ -14,7 +14,7 @@ Here's an example of usage:
 ./server -m minichat-3b.q8_0.gguf
 python api_like_OAI.py --chat-format minichat-uncensored
 ```
-Yes, you can use prompt injection to jailbreak. For specific examples, please refer to `chat_format.toml`
+Moreover, you can try prompt injection for jailbreaking. For specific examples, please refer to the `chat_format.toml` file. 
 
 ---
 
