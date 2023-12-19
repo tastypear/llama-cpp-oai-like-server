@@ -1,22 +1,19 @@
 # llama-cpp-oai-like-server
 
-### English introduction
+### Introduction
 
-A small improvement to `llama.cpp/examples/server/api_like_OAI.py` to support more conversation formats.
+This repository introduces a minor enhancement to `llama.cpp/examples/server/api_like_OAI.py` aimed at expanding support for various chat formats.
 
-`llama.cpp-python` supports setting the chat template by `--chat_format`, but there are always some models whose chat format is not in the supported list.
-According to the author's design, you need to modify the code to be compatible with the new format.
+`llama.cpp-python` allows the customization of the chat template through the `--chat_format` option. However, certain models may not have their chat formats included in the provided list of supported formats. In accordance with the author's design, code modifications are necessary to ensure compatibility with new formats.
 
-In an update in December 2023, llama.cpp/server fixed the Unicode garbled problem.
-llama.cpp provides `api_like_OAI.py` to convert the original interface into an OpenAI compatible format. So I added `--chat-format` to it.
-You can set more templates in `chat_format.toml`.
+In a December 2023 update, llama.cpp/server resolved the Unicode garbled problem. The repository includes `api_like_OAI.py`, which serves to convert the original interface into a format compatible with OpenAI. As part of this adaptation, I introduced the `--chat-format` option. Users can define additional templates in the `chat_format.toml` file.
 
-For example:
+Here's an example of usage:
+
 ```bash
 ./server -m minichat-3b.q8_0.gguf
 python api_like_OAI.py --chat-format minichat-uncensored
 ```
-
 Yes, you can use prompt injection to jailbreak. For specific examples, please refer to `chat_format.toml`
 
 ---
