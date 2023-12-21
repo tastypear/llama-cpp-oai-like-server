@@ -3,7 +3,7 @@ prefix = ""
 system = "<|im_start|>system\n{content}<|im_end|>"
 user = "<|im_start|>user\n{content}<|im_end|>"
 assistant = "<|im_start|>assistant\n{content}<|im_end|>"
-suffix = ""
+suffix = "<|im_start|>assistant\n"
 
 [minichat]
 prefix = ""
@@ -11,6 +11,13 @@ system = "{content}</s>"
 user = "[|User|]{content}</s>"
 assistant = "[|Assistant|]{content}</s>"
 suffix = ""
+
+[blossom]
+prefix = ""
+system = "{content}\n"
+user = "|Bot|: {content}<|endoftext|>\n"
+assistant = "|Human|: {content}\n"
+suffix = "|Bot|: "
 
 
 # 😈Example of Prompt Injection Attack
