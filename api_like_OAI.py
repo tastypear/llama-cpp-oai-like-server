@@ -52,7 +52,7 @@ def convert_chat_with_template(messages):
             prompt += chat_format["user"].format(content = line['content'])
         if (line["role"] == "assistant"):
             prompt += chat_format["assistant"].format(content = line['content'])
-    prompt = f"{chat_format['prefix']}{prompt}{chat_format['suffix']}".rstrip()
+    prompt = f"{chat_format['prefix']}{prompt}{chat_format['suffix']}"
     return prompt
 
 #convert chat to prompt
