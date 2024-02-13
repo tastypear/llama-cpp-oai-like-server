@@ -19,6 +19,110 @@ user = "|Bot|: {content}<|endoftext|>\n"
 assistant = "|Human|: {content}\n"
 suffix = "|Bot|: "
 
+[vicuna]
+prefix = ""
+system = "{content}\n"
+user = "USER: {content}\n"
+assistant = "ASSISTANT: {content}\n"
+suffix = "ASSISTANT:"
+
+[internlm]
+prefix = ""
+system = "<|User|>: {content}<eoh>\n"
+user = "<|User|>: {content}<eoh>\n"
+assistant = "<|Bot|>: {content}\n"
+suffix = "<|Bot|>:"
+
+[alpaca]
+prefix = ""
+system = "{content}\n\n"
+user = "##Instruction: {content}\n\n"
+assistant = "##Response: {content}\n\n"
+suffix = "##Response:"
+
+[human-assistant]
+prefix = ""
+system = "{content}\n\n"
+user = "Human: {content}\n\n"
+assistant = "Assistant: {content}\n\n"
+suffix = "Assistant:"
+
+[chat-1]
+prefix = ""
+system = "USER:{content} "
+user = "USER: {content} "
+assistant = "ASSIST: {content} "
+suffix = "ASSIST: "
+
+[deepseek-chat]
+prefix = ""
+system = "Human: {content}\n\n"
+user = "Human: {content}\n\n"
+assistant = "Assistant: {content}\n\n"
+suffix = "Assistant: "
+
+[yayi2]
+prefix = ""
+system = "##Human: {content}\n"
+user = "##Human: {content}\n"
+assistant = "##Assistant: {content}\n"
+suffix = "##Assistant:"
+
+[yayi2-alt]
+prefix = ""
+system = "#Human: {content}\n"
+user = "#Human: {content}\n"
+assistant = "#Assistant: {content}\n"
+suffix = "#Assistant:"
+
+[orca-vicuna]
+prefix = ""
+system = "SYSTEM: {content}\n"
+user = "USER: {content}\n"
+assistant = "ASSISTANT: {content}\n"
+suffix = "ASSISTANT: "
+
+[human-assistant-2]
+prefix = ""
+system = "System: {content}\n\n"
+user = "User: {content}\n\n"
+assistant = "Assistant: {content}\n\n"
+suffix = "Assistant:"
+
+[alice-bob]
+prefix = ""
+system = "Alice: {content}\n"
+user = "Alice: {content}\n"
+assistant = "Bob: {content}\n"
+suffix = "Bob:"
+
+[instruct-output]
+prefix = ""
+system = "Instruct: {content}\n"
+user = "Instruct: {content}\n"
+assistant = "Output: {content}\n"
+suffix = "Output:"
+
+[solar]
+prefix = ""
+system = "##User:\n{content}\n"
+user = "##User:\n{content}\n"
+assistant = "##Assistant:\n{content}\n"
+suffix = "##Assistant:"
+
+[instruction-input-response]
+prefix = ""
+system = "##Instruction:\n{content}\n"
+user = "##Input:\n{content}\n"
+assistant = "##Response:\n{content}\n"
+suffix = "##Response:"
+
+[human-assistant-3]
+prefix = ""
+system = "User: {content}\n\n"
+user = "User: {content}\n\n"
+assistant = "Assistant: {content}\n\n"
+suffix = "Assistant:"
 
 # 😈Example of Prompt Injection Attack
 
