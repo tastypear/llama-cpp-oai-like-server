@@ -124,6 +124,13 @@ user = "User: {content}\n\n"
 assistant = "Assistant: {content}\n\n"
 suffix = "Assistant:"
 
+[gemma]
+prefix = ""
+system = "<start_of_turn>user\n{content}<end_of_turn>"
+user = "<start_of_turn>user\n{content}<end_of_turn>"
+assistant = "<start_of_turn>model\n{content}<end_of_turn>"
+suffix = "<start_of_turn>model"
+
 # 😈Example of Prompt Injection Attack
 
 [minichat-uncensored-en]
