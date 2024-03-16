@@ -131,6 +131,13 @@ user = "<start_of_turn>user\n{content}<end_of_turn>"
 assistant = "<start_of_turn>model\n{content}<end_of_turn>"
 suffix = "<start_of_turn>model"
 
+[command-r]
+prefix = "<BOS_TOKEN>"
+system = "<|START_OF_TURN_TOKEN|><|SYSTEM_TOKEN|>{content}<|END_OF_TURN_TOKEN|>"
+user = "<|START_OF_TURN_TOKEN|><|USER_TOKEN|>{content}<|END_OF_TURN_TOKEN|>"
+assistant = "<|START_OF_TURN_TOKEN|><|CHATBOT_TOKEN|>{content}<|END_OF_TURN_TOKEN|>"
+suffix = "<|START_OF_TURN_TOKEN|><|CHATBOT_TOKEN|>"
+
 # 😈Example of Prompt Injection Attack
 
 [minichat-uncensored-en]
