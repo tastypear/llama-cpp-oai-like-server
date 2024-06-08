@@ -2,6 +2,8 @@
 
 ### Introduction
 
+#### For now, GGUF models come with built-in conversation templates, so manual setup for regular use is no longer necessary. Consequently, the primary goal of this project currently is to eliminate the model's limitations through injection.
+
 This repository introduces a minor enhancement to `llama.cpp/examples/server/api_like_OAI.py` aimed at expanding support for various chat formats.
 
 `llama.cpp-python` allows the customization of the chat template through the `--chat_format` option. However, certain models may not have their chat formats included in the provided list of supported formats. In accordance with the author's design, code modifications are necessary to ensure compatibility with new formats.
@@ -19,6 +21,8 @@ Moreover, you can try prompt injection for jailbreaking. For specific examples, 
 ---
 
 ### 中文介绍
+
+#### 更新：当前，GGUF模型已内置对话模板，故常规使用已无需手动设置模板。因此，本项目现阶段的用途是借助注入解除模型限制。
 
 对`llama.cpp/examples/server/api_like_OAI.py`的一点小改进，使其能够支持更多的对话格式。
 
