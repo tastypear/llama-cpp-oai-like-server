@@ -5,6 +5,13 @@ user = "<|im_start|>user\n{content}<|im_end|>"
 assistant = "<|im_start|>assistant\n{content}<|im_end|>"
 suffix = "<|im_start|>assistant\n"
 
+[openbuddy]
+prefix = ""
+system = "<|role|>system<|says|>{content}<|end|>\n"
+user = "<|role|>user<|im_end|>{content}<|end|>\n"
+assistant = "<|role|>assistant<|says|>{content}<|end|>\n"
+suffix = "<|role|>assistant<|says|>"
+
 [minichat]
 prefix = ""
 system = "{content}</s>"
@@ -76,6 +83,13 @@ assistant = "#Assistant: {content}\n"
 suffix = "#Assistant:"
 
 [orca-vicuna]
+prefix = ""
+system = "SYSTEM: {content}\n"
+user = "USER: {content}\n"
+assistant = "ASSISTANT: {content}\n"
+suffix = "ASSISTANT: "
+
+[vicuna-orca]
 prefix = ""
 system = "SYSTEM: {content}\n"
 user = "USER: {content}\n"
